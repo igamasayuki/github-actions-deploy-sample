@@ -34,7 +34,7 @@ jobs: # ワークフローで実行されるジョブ群
         host=133.242.207.57
         port=22
         dest=/home/centos
-        warFile=hello-project3.war
+        warFile=github-actions-deploy-sample.war
 
         # SCPでwarファイルをリモートサーバにコピー
         scp -o StrictHostKeyChecking=no -P $port -i ~/.ssh/id_rsa ./build/libs/$warFile $user@$host:$dest
